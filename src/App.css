@@ -1,0 +1,111 @@
+/* Dark Mode Styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #1f1f1f;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #e0e0e0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: calc(100vh - 20vh);
+}
+
+.left, .right {
+  width: 48%;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.editable {
+  padding: 10px;
+  background-color: #2c2c2c;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+textarea, input {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 10px;
+  border: 1px solid #333;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  margin-right: 5px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.tab.active {
+  background-color: #3f51b5;
+  border-bottom: none;
+}
+
+.tab-content {
+  border: 1px solid #333;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.test-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+textarea {
+  flex-grow: 1;
+  margin-right: 10px;
+  resize: vertical;
+}
